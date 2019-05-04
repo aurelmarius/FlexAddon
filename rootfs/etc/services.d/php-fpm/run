@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: Phlex
+# Runs the PHP-FPM daemon
+# ==============================================================================
+bashio::log.info "Starting PHP-FPM..."
+exec php-fpm7 --nodaemonize
